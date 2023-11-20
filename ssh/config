@@ -1,0 +1,21 @@
+Host github.com
+  User          jhonperez95
+  HostName      github.com
+  IdentityFile  ~/.ssh/id_rsa_person
+
+Host work.github.com
+  User          perezl40
+  HostName      github.com
+  IdentityFile  ~/.ssh/id_rsa_work
+
+Host blue.github.com
+  User          jhonperezb
+  HostName      github.com
+  IdentityFile  ~/.ssh/id_rsa_blue
+
+Host *
+  AddKeysToAgent            yes
+  IdentitiesOnly            yes
+  UseKeychain               yes
+  Compression               yes
+  PreferredAuthentications  publickey
